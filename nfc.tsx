@@ -77,7 +77,7 @@ function NfcView(): JSX.Element {
         try {
             await NfcManager.requestTechnology(NfcTech.Ndef);
 
-            const bytes = Ndef.encodeMessage([Ndef.uriRecord('https://blog.logrocket.com/')]);
+            const bytes = Ndef.encodeMessage([Ndef.uriRecord({userId: "testUserId", amount: 3423 })]);
 
             if (bytes) {
                 await NfcManager.ndefHandler
