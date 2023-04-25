@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Send Request</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+      #inputField {
+        font-size: 36px;
+        text-align: right;
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        outline: none;
+        margin-bottom: 20px;
+      }
+  
+      .btn-rounded {
+        border-radius: 50px;
+        padding: 15px 30px;
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col-2">
+          <a href="homepage.html"><i class="fa fa-arrow-left"></i></a>
+        </div>
+        <div class="col-8 text-center">
+          <h4>Send Money</h4>
+        </div>
+      </div>
+      <div class="col">
+        <p class="text-left">Available Balance: <span id="balance">$500</span></p>
+      </div>
+      <div class="form-group">
+        <label for="amount">Enter amount:</label>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">$</span>
+          </div>
+          <input type="number" class="form-control" id="amount" placeholder="0.00" step="0.01" min="0" max="10000">
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-4">
+          <button type="button" class="btn btn-primary btn-lg btn-block">1</button>
+        </div>
+        <div class="col-4">
+          <button type="button" class="btn btn-primary btn-lg btn-block">2</button>
+        </div>
+        <div class="col-4">
+          <button type="button" class="btn btn-primary btn-lg btn-block">3</button>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-4">
+          <button type="button" class="btn btn-primary btn-lg btn-block">4</button>
+        </div>
+        <div class="col-4">
+          <button type="button" class="btn btn-primary btn-lg btn-block">5</button>
+        </div>
+        <div class="col-4">
+          <button type="button" class="btn btn-primary btn-lg btn-block">6</button>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-4">
+          <button type="button" class="btn btn-primary btn-lg btn-block">7</button>
+        </div>
+        <div class="col-4">
+          <button type="button" class="btn btn-primary btn-lg btn-block">8</button>
+        </div>
+        <div class="col-4">
+          <button type="button" class="btn btn-primary btn-lg btn-block">9</button>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-4">
+          <button type="button" class="btn btn-primary btn-lg btn-block">0</button>
+        </div>
+        <div class="col-4">
+          <button type="button" class="btn btn-primary btn-lg btn-block">00</button>
+        </div>
+        <div class="col-4">
+          <button type="button" class="btn btn-primary btn-lg btn-block">←</button>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-12 text-center">
+          <button type="button" class="btn btn-primary btn-lg rounded-pill">Transfer</button>
+        </div>
+      </div>
+    </div>
